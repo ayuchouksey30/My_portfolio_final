@@ -1,0 +1,434 @@
+/* bg #431E48 */
+/* #F9F5E3 */
+/* 1f3232 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #100013;
+  color: #F9F5E3;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  height: 100vh;
+}
+
+.buttons span{
+  margin: 0 3% 0 0;
+
+}
+.custom-button {
+  background-color: #BB69C9; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  height: 50px;
+  width: 150px;
+}
+
+.custom-button:hover {
+  background-color: #bb69c9b2; /* Change background color on hover */
+  transform: scale(1.03);
+  transition: 0.20s ease-in-out;
+  filter: drop-shadow(10px 10px 2px black);
+}
+
+nav .left {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 5px 0 65px;
+  transition: 0.1s ease;
+}
+
+nav .left:hover {
+  color: #BB69C9;
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #2b1130eb;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px 0 5px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #F9F5E3;
+  position: relative;
+  /* Add position relative to the anchor element */
+  transition: 0.3s;
+  /* Adjust the transition duration */
+}
+
+nav ul li a::before {
+  /* Create the pseudo-element for the sliding border */
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  /* Adjust the height of the sliding border */
+  background-color: #BB69C9;
+  bottom: -4px;
+  /* Adjust the distance between border and text */
+  left: 0;
+  transition: width 0.3s ease;
+  /* Apply the transition to width */
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+  /* Slide-in effect by increasing the width to 100% */
+}
+
+nav ul li a:hover {
+  font-size: 1.04rem;
+  color: #BB69C9;
+}
+
+main .intro {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 0;
+  /* change the margin acc to you */
+  height: 92vh;
+
+}
+
+.intro .right_sec {
+  align-self: center;
+  /* Vertically center the right section */
+  width: 40%;
+
+}
+
+.intro .left_sec {
+  align-self: center;
+  /* Vertically center the right section */
+  width: 40%;
+
+
+}
+
+img:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
+  filter: drop-shadow(30px 15px 5px black);
+  /* to give shadow in transpaernt/png image */
+}
+
+.right_sec .intro_img {
+  width: 87%;
+  /* margin: 87px 0 50px 0; */
+  position: relative;
+
+}
+
+.right_sec .intro_img:hover {
+  transform: scale(1.03);
+  transition: 0.05s ease;
+  filter: drop-shadow(30px 15px 5px black);
+  /* to give shadow in transpaernt/png image */
+
+}
+
+.intro .left_sec {
+  font-size: 3rem;
+
+  /* margin: 97px 0; */
+
+  /* text-align: center; */
+}
+
+
+.green {
+  color: #BB69C9;
+  transition: 0.1s;
+}
+
+.green:hover {
+  transform: scale(1.006);
+  transition: 0.2s ease-in-out;
+  align-items: center;
+
+}
+
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 40px 65px;
+  /* align-items: center; */
+  text-align: center;
+  letter-spacing: 3px;
+  transition: 0.1s ease;
+}
+
+.text:hover {
+  color: #BB69C9;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.about {
+  height: 100vh;
+}
+
+hr {
+  border: 1px solid;
+  border-radius: 10px;
+  color: #280030;
+  height: 0rem;
+  margin: 0 4%;
+}
+
+.abt_me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.abt_me .left_sec {
+  align-self: center;
+  /* Vertically center the right section */
+  width: 35%;
+}
+
+.abt_me .left_sec img {
+  width: 85%;
+}
+
+.abt_me .right_sec {
+  align-self: center;
+  /* Vertically center the right section */
+  width: 60%;
+
+}
+
+.abt_me .right_sec .ab_me_txt {
+  align-self: center;
+  /* Vertically center the right section */
+  margin: 3%;
+
+}
+
+.abt_me .right_sec div {
+  margin: 10px auto;
+}
+.skill_main {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 0;
+  
+}
+.box{
+  margin: 5%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.015);
+  border: 1px #bb69c9a1 solid ;
+  border-radius: 20px;
+  width: 28%;
+height: 60vh;
+}
+.box:hover{
+  background-color: #bb69c914;
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+  box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.5); /* Adjust the values for the shadow */
+
+}
+
+.txt{
+  text-align: center;
+  margin: 8%;
+  font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+
+
+.box div{
+  opacity: 100%;
+}
+/* .webd{
+  margin: 5%;
+  text-align: center;
+  background-color: black;
+width: 28%;
+height: 60vh;
+border-radius: 10px;
+}
+.other{
+  
+  margin: 5%;
+  text-align: center;
+  background-color: black;
+  width: 28%;
+  height: 60vh;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+  height: 93vh;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  height: 5vh;
+  text-align: center;
+  padding: 7px;
+  background-color: #2b11309d;
+}
+footer div{
+  align-self: center;
+  margin: 0 3%;
+}
+
+footer div img{
+  width: 3%;
+}
+footer div img:hover{
+  filter: drop-shadow(0 0 0 );
+  /* to give shadow in transpaernt/png image */
+}
+
+.copyright{
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 690px) {
+  nav {
+    display: block;
+    height: 100px;
+  }
+
+  nav .left {
+
+    margin: 0px 0px 0 25px;
+    padding: 10px 0 0 0;
+    justify-content: space-around;
+    transition: 0.1s;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px 0 0px;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  main .intro {
+    display: block;
+    /* justify-content: space-around;
+    margin: 0px 0; */
+    /* change the margin acc to you */
+    /* height: 93vh; */
+  }
+
+  .intro .right_sec {
+    align-self: center;
+    /* Vertically center the right section */
+    width: 100%;
+
+  }
+
+  .intro .left_sec {
+    margin: 2% 0 0 7%;
+    width: 100%;
+  }
+
+  .intro .left_sec {
+    font-size: 2.0rem;
+  }
+
+  .intro .right_sec {
+    align-self: center;
+    /* Vertically center the right section */
+    width: 100%;
+    text-align: center;
+    margin: 10% 0 0 0;
+  }
+
+  .right_sec .intro_img {
+    height: 52%;
+    position: relative;
+  }
+  .abt_me {
+    display: block;
+  }
+}

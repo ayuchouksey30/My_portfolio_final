@@ -1,0 +1,155 @@
+html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add a Google Font for improved typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio | Ayush Chouksey</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li class="l_nbar"><a class="a_nbar" href="">Home</a></li>
+                <li class="l_nbar"><a class="a_nbar" href="">About</a></li>
+                <li class="l_nbar"><a class="a_nbar" href="">Projects</a></li>
+                <li class="l_nbar"><a class="a_nbar" href="">Skills</a></li>
+                <li class="l_nbar"><a class="a_nbar" href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="title">
+            &lt; A Y U S H &gt;
+        </div>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>
+            Welcome to my portfolio website! I'm Ayush Chouksey, a passionate web developer with a love for creating engaging and user-friendly websites. My journey in the world of coding started with a fascination for technology and a desire to bring creative ideas to life.
+        </p>
+        <p>
+            With a strong foundation in HTML, CSS, and JavaScript, I'm constantly exploring new technologies and frameworks to enhance my skills. I believe in the power of clean code and intuitive design to provide the best user experience.
+        </p>
+    </section>
+
+    <!-- More sections for projects, skills, and contact can be added -->
+
+    <footer>
+        <div id="social-links">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2023 Ayush Chouksey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+css:
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.l_nbar {
+    margin: 0 15px;
+}
+
+.a_nbar {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.a_nbar:hover {
+    color: #007bff;
+}
+
+/* About section styles */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#social-links a {
+    margin: 0 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #title {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .l_nbar {
+        margin: 5px 0;
+    }
+}
